@@ -1,6 +1,7 @@
 package Veicoli.Aeromobili;
 
-interface Volante {
-	 void decolla();
+public interface Volante {
+	void decolla();
+
 	void atterra();
 }

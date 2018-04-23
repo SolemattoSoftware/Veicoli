@@ -15,7 +15,8 @@ public class Nave extends Veicolo {
 		System.out.println("Decelera Nave");
 
 	}
-	
+
+	@SuppressWarnings("WeakerAccess")
 	public void gettaAncora() {
 		System.out.println("Getta l'ancora");
 	}

@@ -1,6 +1,6 @@
 package Veicoli.Autoveicoli;
 
-public interface CambioManuale {
+interface CambioManuale {
 
 	default void innestaRetromarcia() {
 		System.out.println("Retromarcia innestata");

@@ -1,6 +1,6 @@
 package Persone;
 
-public class Persona {
+class Persona {
 	private String nome, cognome, telefono;
 	private int eta;
 

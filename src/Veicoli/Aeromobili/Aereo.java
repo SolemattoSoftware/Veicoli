@@ -1,6 +1,7 @@
 package Veicoli.Aeromobili;
 
-import Veicoli.Veicolo;;
+import Veicoli.Aeromobili.Controllo.TorreDiControllo;
+import Veicoli.Veicolo;
 
 public class Aereo extends Veicolo implements Volante{
 	
@@ -18,16 +19,18 @@ public class Aereo extends Veicolo implements Volante{
 	public void decolla() {
 		System.out.println("Decolla");
 	}
-	
-	 public void atterra() {
+
+    public void atterra() {
 		System.out.println("Atterra");
 	}
-	 
+
+    @Override
 	 public void giroDiProva() {
-		 this.accelera();
-		 this.decolla();
-		 this.decelera();
-		 this.atterra();
+        TorreDiControllo torre = new TorreDiControllo();
+        this.accelera();
+        torre.autorizzaDecollo(this);
+        this.decelera();
+        torre.autorizzAtterraggio(this);
 	 }
 	 
 	
